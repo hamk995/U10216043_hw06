@@ -1,0 +1,11 @@
+package hw_06;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class BounceBallApp extends JApplet{
+	 
+	public BounceBallApp(){
+		add(new BallControl());
+	} 
+}

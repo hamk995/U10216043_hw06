@@ -1,0 +1,22 @@
+package hw_06;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class BounceBallApp extends JFrame{
+	
+	
+	
+	public static void main(String []args){
+		JFrame frame = new BounceBallApp();
+		frame.setTitle("BounceBallApp");
+		frame.setSize(200,100);
+		frame.setLocationRelativeTo(null);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+	}
+	
+	public BounceBallApp(){
+		add(new BallControl());
+	}
+}

@@ -1,0 +1,24 @@
+package hw_06;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class BounceBallApp extends JApplet{
+	 
+	public BounceBallApp(){
+		add(new BallControl());
+	} 
+	
+	public static void main(String []args){
+		JFrame frame = new JFrame("BounceBallApp");
+		
+		BounceBallApp applet = new BounceBallApp();
+		
+		frame.add(applet);
+		
+		frame.pack();
+		frame.setLocationRelativeTo(null);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+	}
+}
